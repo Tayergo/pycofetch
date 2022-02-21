@@ -1,0 +1,17 @@
+import os
+print("pycofetch")
+print("OS")
+os.system("uname -o")
+print("Kernel Version")
+os.system("uname -r")
+print("Host Name")
+os.system("cat /proc/sys/kernel/hostname")
+print("Uptime")
+os.system("uptime")
+print("CPU")
+os.system("grep -m 1 'model name' /proc/cpuinfo")
+print("GPU")
+os.system("lspci | grep -Em2 'VGA'")
+print("RAM")
+os.system("egrep 'MemTotal|MemAvailable' /proc/meminfo")
+
